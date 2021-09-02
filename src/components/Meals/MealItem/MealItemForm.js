@@ -14,6 +14,7 @@ const MealItemForm = (props) => {
 
     // this value will always be a string
     const enteredAmount = amountInputRef.current.value;
+    // convert the string value to a number
     const enteredAmountNumber = +enteredAmount;
 
     if (enteredAmount.trim().length === 0 || enteredAmountNumber < 1 || enteredAmountNumber > 5) {
